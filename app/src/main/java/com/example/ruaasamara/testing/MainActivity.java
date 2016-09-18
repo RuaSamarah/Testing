@@ -47,4 +47,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    void testing5() {
+        int x = 2;
+        int y = 4;
+        int z = x+y;
+    }
+    void testing6() {
+        int x = 2;
+        int y = 4;
+        int z = x+y;
+    }
+    void testing7() {
+        int x = 2;
+        int y = 4;
+        int z = x+y;
+    }
+
+    void test(){
+
+      System.out.print("k");
+
+
+    }
+
 }
