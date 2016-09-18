@@ -37,5 +37,4 @@ public class MainActivity extends AppCompatActivity {
         int z = x+y;
     }
 
-
 }
