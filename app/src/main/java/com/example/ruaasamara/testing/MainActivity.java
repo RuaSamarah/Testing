@@ -28,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    void testing4() {
+        int x = 2;
+        int y = 4;
+        int z = x + y;
+
+    }
+
 
 
 }
