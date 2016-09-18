@@ -16,9 +16,18 @@ public class MainActivity extends AppCompatActivity {
         int z = x+y;
     }
      void testing2() {
+         int x = 2;
+         int y = 4;
+         int z = x + y;
+
+     }
+    void testing3() {
         int x = 2;
         int y = 4;
-        int z = x+y;
+        int z = x + y;
+
     }
+
+
 
 }
