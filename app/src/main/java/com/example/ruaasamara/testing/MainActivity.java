@@ -10,4 +10,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    void testing() {
+        int x = 2;
+        int y = 4;
+        int z = x+y;
+    }
+
 }
