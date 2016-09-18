@@ -73,4 +73,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    void test3(){
+
+        System.out.print("k");
+
+
+    }
+
 }
