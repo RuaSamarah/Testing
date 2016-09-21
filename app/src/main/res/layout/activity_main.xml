@@ -10,7 +10,240 @@
     tools:context="com.example.ruaasamara.testing.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/calculator"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/abc_btn_colored_borderless_text_material"
+        android:textColorHighlight="@color/abc_btn_colored_borderless_text_material"
+        android:textSize="@dimen/textSize"
+        android:autoText="false"
+        android:fontFamily="@string/abc_font_family_title_material" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:text="0"
+            android:gravity="right" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC"
+                    android:id="@+id/ac"
+                    android:layout_column="0"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:id="@+id/perc"
+                    android:layout_column="1"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:id="@+id/div"
+                    android:layout_column="2"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:id="@+id/clear"
+                    android:layout_column="3"
+                    android:background="@color/calColor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:id="@+id/seven"
+                    android:layout_column="0"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:id="@+id/eight"
+                    android:layout_column="1"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:id="@+id/nine"
+                    android:layout_column="2"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:id="@+id/mult"
+                    android:layout_column="3"
+                    android:background="@color/calColor"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/four"
+                    android:layout_column="0"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/five"
+                    android:layout_column="1"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:id="@+id/six"
+                    android:layout_column="2"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/sub"
+                    android:layout_column="3"
+                    android:background="@color/calColor"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/one"
+                    android:layout_column="0"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/two"
+                    android:layout_column="1"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/three"
+                    android:layout_column="2"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/add"
+                    android:layout_column="3"
+                    android:background="@color/calColor"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/zero"
+                    android:layout_column="0"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:id="@+id/point"
+                    android:layout_column="1"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="( )"
+                    android:id="@+id/arrow"
+                    android:layout_column="2"
+                    android:background="@color/calColor"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:id="@+id/equal"
+                    android:layout_column="3"
+                    android:background="@color/calColor"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:layout_gravity="left|top"
+                android:src="@drawable/math" />
+        </FrameLayout>
+    </LinearLayout>
 </RelativeLayout>
